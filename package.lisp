@@ -25,3 +25,7 @@
         :utils
         :monitors
         :capi))
+
+(export '(*dev-tools-path*))
+(defparameter *dev-tools-path* (make-pathname :directory (pathname-directory (or *load-truename*
+                                                                                 *compile-file-truename*))))

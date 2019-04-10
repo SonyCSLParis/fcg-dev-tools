@@ -136,21 +136,24 @@
 ;; --------------------------------------------------
 (gp:register-image-translation
  'send-to-web-interface-image
- #.(gp:read-external-image (babel-pathname :directory '("sharing" "fcg-dev-tools" "imgs")
-                                           :name "web-interface"
-                                           :type "bmp")))
+ #.(gp:read-external-image (merge-pathnames (make-pathname :directory '(:relative "imgs")
+                                            :name "web-interface"
+                                            :type "bmp")
+                                            *dev-tools-path*)))
 
 (gp:register-image-translation
  'apply-in-formulation-image
- #.(gp:read-external-image (babel-pathname :directory '("sharing" "fcg-dev-tools" "imgs")
-                                           :name "formulate"
-                                           :type "bmp")))
+ #.(gp:read-external-image (merge-pathnames (make-pathname :directory '(:relative "imgs")
+                                            :name "formulate"
+                                            :type "bmp")
+                                            *dev-tools-path*)))
 
 (gp:register-image-translation
  'apply-in-comprehension-image
- #.(gp:read-external-image (babel-pathname :directory '("sharing" "fcg-dev-tools" "imgs")
-                                           :name "comprehension"
-                                           :type "bmp")))
+ #.(gp:read-external-image (merge-pathnames (make-pathname :directory '(:relative "imgs")
+                                            :name "comprehension"
+                                            :type "bmp")
+                                            *dev-tools-path*)))
 
 ;; The interface
 ;; -----------------------------------------------------------------------------------------
