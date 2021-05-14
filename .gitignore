@@ -1,3 +1,5 @@
 *.asd~
 *.lisp~
 *.xfasl
+/construction-bank-builder.64xfasl
+*.64xfasl

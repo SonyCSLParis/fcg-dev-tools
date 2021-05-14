@@ -72,6 +72,7 @@
         (value (second x-with-value)))
     (unless (or (listp feature) (null value))
       (if (or (symbolp value)
+              (stringp value)
               (dev-simple-feature-p feature feature-types))
         (list (list value nil))
         (loop for f in value
